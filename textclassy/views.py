@@ -6,8 +6,6 @@ from django.views.decorators.csrf import csrf_exempt
 from .labels import CANDIDATE_LABELS
 
 
-def index(request):
-    return render(request,"index.html")
 
 @csrf_exempt
 def textclassifier(request):
